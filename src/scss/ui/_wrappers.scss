@@ -1,0 +1,13 @@
+// Containers
+.container {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $layoutPadding;
+  &--inner {
+    max-width: $layoutInnerWidth;
+  }
+  &--flush {
+    padding: 0;
+  }
+}

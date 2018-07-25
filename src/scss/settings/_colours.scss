@@ -1,0 +1,32 @@
+// Brand/Design Colours
+$colourThemeGreyDarker: #454545;
+$colourThemeGreyDark: #3d3c3c;
+$colourThemeGrey: #696868;
+$colourThemeGreyLight: #dcdddb;
+$colourThemeBlue: #527286;
+$colourThemeBrown: #745238;
+
+// Black/White
+$colourBlack: #000;
+$colourWhite: #fff;
+
+// System Colours
+$colourError: #d00;
+$colourSuccess: #41ad09;
+
+// Settings - Use colour variables to set the theme colours. We want to avoid using palette colour names in other files to enable easy modification of the site colours.
+$colourPrimary: $colourThemeGreyDark;
+$colourSecondary: $colourThemeGrey;
+
+$colourBackgroundLight: $colourThemeGreyLight;
+
+$colourTextPrimary: $colourThemeGrey;
+$colourTextSecondary: $colourThemeGreyDark;
+
+$colourDivider: #d9d9d9;
+$colourDividerDark: #aaa;
+
+$colourFormInputBorder: $colourThemeGreyDark;
+$colourFormLabel: $colourThemeGreyDark;
+$colourFormToggle: $colourThemeGreyDark;
+

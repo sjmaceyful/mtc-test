@@ -1,0 +1,18 @@
+.icon {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background: $colourPrimary;
+  border-radius: 100%;
+  color: $colourWhite;
+  + .icon {
+    margin-left: 8px;
+  }
+}
+
+.icon__text {
+  @extend .hidden;
+}

@@ -1,0 +1,46 @@
+// Top Links
+.top-links {
+  display: inline-block;
+  margin-right: $layoutMargin;
+}
+
+.top-links__list {
+  margin: 0;
+  padding: 0;
+}
+
+.top-links__item {
+  display: inline-block;
+  margin: 0 0 0 $layoutMargin;
+  padding: 0;
+  list-style: none;
+}
+
+// Main Navigation
+.nav-main__list {
+  margin: 0;
+  padding: 0;
+  color: $colourTextSecondary;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.nav-main__item {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 0;
+  list-style: none;
+  @include breakpoint(large) {
+    margin: 0 20px 0 0;
+  }
+}
+
+.nav-main__link {
+  display: block;
+  padding: 10px;
+  text-transform: uppercase;
+  &:hover {
+    text-decoration: none;
+    color: $colourSecondary;
+  }
+}

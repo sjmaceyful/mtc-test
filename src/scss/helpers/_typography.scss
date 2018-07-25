@@ -1,0 +1,32 @@
+// Alignment
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+// Margins
+.no-bottom {
+  margin-bottom: 0;
+}
+
+// Text Styles
+.bold-text {
+  font-weight: 800;
+}
+
+// Helpers
+.hidden, .screen-reader-text {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

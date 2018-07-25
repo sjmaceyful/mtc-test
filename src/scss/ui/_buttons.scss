@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  padding: 11px 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid $colourDivider;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+  &:hover {
+    border: 1px solid $colourDividerDark;
+    text-decoration: none;
+  }
+  @include breakpoint(lmedium) {
+    min-width: 268px;
+    font-size: 1.8rem;
+  }
+}

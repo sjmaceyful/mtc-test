@@ -1,0 +1,15 @@
+ul, ol {
+  margin: 0 0 $layoutMargin $layoutMargin;
+  padding: 0;
+  font-size: 1em;
+}
+
+li {
+  margin: 0 0 #{$layoutMargin / 4} 0;
+  padding: 0 0 0 #{$layoutMargin / 4};
+  line-height: 1.4;
+
+  ul & {
+    list-style: disc outside;
+  }
+}

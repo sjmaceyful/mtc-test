@@ -1,0 +1,24 @@
+.brands {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $colourDivider;
+  @include breakpoint(smedium) {
+    margin-top: -10px;
+    flex-flow: row nowrap;
+  }
+}
+
+.brands__item {
+  flex: 0 0 auto;
+  width: 33.333%;
+  padding: 5px;
+  text-align: center;
+  @include breakpoint(smedium) {
+    flex: 1 1 auto;
+    width: auto;
+    padding: 0 20px;
+  }
+}

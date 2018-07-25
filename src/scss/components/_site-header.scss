@@ -1,0 +1,75 @@
+.site-header__top {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: $colourBackgroundLight;
+  color: $colourTextSecondary;
+  @include breakpoint(medium) {
+    height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.site-header__top-left {
+  display: none;
+  @include breakpoint(medium) {
+    display: block;
+  }
+}
+
+.site-header__top-right {
+  text-align: center;
+  @include breakpoint(vsmall) {
+    text-align: left;
+  }
+  @include breakpoint(medium) {
+    text-align: right;
+  }
+}
+
+.site-header__main {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $colourDivider;
+  text-align: center;
+  @include breakpoint(medium) {
+    height: 164px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.site-header__bottom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @include breakpoint(medium) {
+    height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.site-header__social {
+  display: none;
+  @include breakpoint(vsmall) {
+    display: inline-block;
+    margin-top: 0;
+  }
+}
+
+.site-header__button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.site-header__main--left {
+  @include breakpoint(medium) {
+    text-align: left;
+  }
+}
+
+.site-header__main--right {
+  @include breakpoint(medium) {
+    text-align: right;
+  }
+}

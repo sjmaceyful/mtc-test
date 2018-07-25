@@ -1,0 +1,108 @@
+.feature-boxes {
+  @include breakpoint(small) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 20px;
+  }
+}
+
+.feature-boxes__item {
+  position: relative;
+  margin-bottom: 20px;
+  @include breakpoint(small) {
+    flex: 1 1 auto;
+    width: 0; // Equal width columns
+    margin-bottom: 0;
+    + .feature-boxes__item {
+      margin-left: 20px;
+    }
+  }
+}
+
+.feature-boxes__image {
+  position: relative;
+  display: block;
+  width: 100%;
+  z-index: $layerFirst;
+}
+
+.feature-boxes__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+  width: 100%;
+  height: calc(100% - 46px);
+  color: $colourWhite;
+  text-align: center;
+  line-height: 1;
+  font-size: 2.4rem;
+  text-decoration: underline;
+  z-index: $layerSecond;
+  &--rotate {
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    font-size: 2rem;
+    transform: rotate(-90deg);
+  }
+  @include breakpoint(small) {
+    font-size: 3.2rem;
+    &--rotate {
+      font-size: 2.4rem;
+    }
+  }
+  @include breakpoint(lmedium) {
+    font-size: 2.8rem;
+    &--rotate {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.feature-boxes__image {
+  display: block;
+}
+
+.feature-boxes__btn {
+  @extend .btn;
+  width: 100%;
+  min-width: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 0;
+  font-size: 1.4rem;
+  color: $colourWhite;
+  transition: background 160ms ease;
+  &::after {
+    content: ">";
+    margin-left: 10px;
+  }
+  &:hover {
+    border: 0;
+  }
+  &--grey {
+    background: $colourThemeGrey;
+    &:hover {
+      background: darken($colourThemeGrey, 10);
+    }
+  }
+  &--blue {
+    background: $colourThemeBlue;
+    &:hover {
+      background: darken($colourThemeBlue, 10);
+    }
+  }
+  &--brown {
+    background: $colourThemeBrown;
+    &:hover {
+      background: darken($colourThemeBrown, 10);
+    }
+  }
+}

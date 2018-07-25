@@ -1,0 +1,20 @@
+img, svg {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  border: 0;
+}
+
+img {
+  image-rendering: optimize-contrast;
+}
+
+svg {
+  fill: currentColor;
+}
+
+figcaption {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+}
